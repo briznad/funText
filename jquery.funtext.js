@@ -105,7 +105,8 @@
 					switches.solidColor = false;
 	        		shadowColor = pantone[shadowColor];
 	        	} else if (typeof(shadowColor) === 'object' || Object.prototype.toString.call(shadowColor) === '[object Array]') {
-	        		switches.solidColor = false;
+					if (shadowColor.length === 1) shadowColor = shadowColor[0];
+					else switches.solidColor = false;
 	        	}
 
 	            base.shadowSize = shadowSize;
