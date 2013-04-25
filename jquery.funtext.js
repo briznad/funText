@@ -92,7 +92,13 @@
 			},
 
 	        init: function() {
-	        	if (typeof(shadowSize) === 'undefined' || shadowSize === null) shadowSize = 10;
+	        	if (typeof(shadowSize) === 'undefined' || shadowSize === null) {
+	        		shadowSize = 10;
+	        	} else if (typeof(shadowSize) !== 'number' && (typeof(shadowColor) === 'undefined' || shadowColor === null)) {
+	        		shadowColor = shadowSize;
+	        		shadowSize = 10;
+	        	}
+
 	        	if (typeof(shadowColor) === 'undefined' || shadowColor === null) {
 	        		shadowColor = '#e74c3c';
 	        	} else if (typeof(pantone[shadowColor]) !== 'undefined') {
