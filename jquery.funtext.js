@@ -34,8 +34,8 @@
         }
 
         // reverse things
-        pantone.reverseRainbow = pantone.rainbow.reverse();
-        pantone.reverseCandy = pantone.candy.reverse();
+        pantone.reverseRainbow = pantone.rainbow.slice(0).reverse();
+        pantone.reverseCandy = pantone.candy.slice(0).reverse();
 
         var switches = {
         	solidColor: true
