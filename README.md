@@ -1,4 +1,4 @@
-funText
+![funText logo](http://briznad.github.io/funText/assets/images/logo.png)
 =======
 
 A [plugin for jQuery](http://plugins.jquery.com/funtext/)/Zepto that adds colorful 3D shadows to text which respond to mouse movement.
