@@ -116,7 +116,7 @@
 	            base.$el.css('text-shadow', methods.buildShadow(1, 1));
 
 	            // in case this isn't the first time this is called, go ahead and unbind any previous instances
-	            $(document).off('mousemove.' + pluginName);
+	            // $(document).off('mousemove.' + pluginName); If we drop this line its much more fun.
 	            // register throttled mousemove event
 	            $(document).on('mousemove.' + pluginName, methods.throttle(methods.watchMouse, 50));
 	        }
